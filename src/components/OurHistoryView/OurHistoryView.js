@@ -232,7 +232,7 @@ const Wrapper = styled.section`
 `;
 const OurHistoryView = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Wrapper>
         <HidingTitle>O NAS</HidingTitle>
         <StyledWrapper>
