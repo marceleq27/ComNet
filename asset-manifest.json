@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/ComNet/static/js/main.457b3a65.chunk.js",
+    "main.js.map": "/ComNet/static/js/main.457b3a65.chunk.js.map",
+    "runtime~main.js": "/ComNet/static/js/runtime~main.2682f8dd.js",
+    "runtime~main.js.map": "/ComNet/static/js/runtime~main.2682f8dd.js.map",
+    "static/css/2.79692622.chunk.css": "/ComNet/static/css/2.79692622.chunk.css",
+    "static/js/2.3ac6e7ae.chunk.js": "/ComNet/static/js/2.3ac6e7ae.chunk.js",
+    "static/js/2.3ac6e7ae.chunk.js.map": "/ComNet/static/js/2.3ac6e7ae.chunk.js.map",
+    "index.html": "/ComNet/index.html",
+    "precache-manifest.44426e377ab9cbc68b678f6a43a36035.js": "/ComNet/precache-manifest.44426e377ab9cbc68b678f6a43a36035.js",
+    "service-worker.js": "/ComNet/service-worker.js",
+    "static/css/2.79692622.chunk.css.map": "/ComNet/static/css/2.79692622.chunk.css.map",
+    "static/media/1.png": "/ComNet/static/media/1.aa5dec35.png",
+    "static/media/2.png": "/ComNet/static/media/2.7d9fb876.png",
+    "static/media/3.png": "/ComNet/static/media/3.3cd58738.png",
+    "static/media/4.png": "/ComNet/static/media/4.fc87bf76.png",
+    "static/media/5.png": "/ComNet/static/media/5.ff8daf8e.png",
+    "static/media/6.png": "/ComNet/static/media/6.67037c6e.png",
+    "static/media/7.png": "/ComNet/static/media/7.bb43723f.png",
+    "static/media/8.png": "/ComNet/static/media/8.629c2f79.png",
+    "static/media/Fala2.png": "/ComNet/static/media/Fala2.4227516c.png",
+    "static/media/computer.png": "/ComNet/static/media/computer.fe931bc7.png"
+  }
+}
