@@ -30,15 +30,18 @@ const StyledWrapper = styled.div`
 `;
 const StyledText = styled.p`
   font-weight: ${({ theme }) => theme.bold};
-  font-size: 63px;
+  font-size: 50px;
   color: ${({ theme }) => theme.white};
   text-align: center;
   width: 100%;
+  @media (min-wdith: 360px) {
+    font-size: 63px;
+  }
   @media (min-width: 768px) {
     font-size: 90px;
   }
   @media (min-width: 1024px) {
-    font-size: 110px;
+    font-size: 140px;
   }
 `;
 const StyledPicture = styled.picture`
@@ -58,7 +61,10 @@ const StyledHamburger = styled.picture`
     right: 7%;
     top: 5%;
     @media (min-width: 1024px) {
-      width: 5%;
+      width: 4%;
+    }
+    @media (min-width: 1600px) {
+      width: 3%;
     }
   }
 `;

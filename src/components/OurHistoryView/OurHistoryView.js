@@ -68,7 +68,7 @@ const StyledUl = styled.ul`
         font-size: 16px;
       }
       @media (min-width: 1024px) {
-        font-size: 18px;
+        font-size: 20px;
       }
     }
   }
@@ -210,7 +210,7 @@ const bounceTransition = {
   // start in a transparent, upscaled state
   atEnter: {
     opacity: 0,
-    scale: 1.2,
+    scale: 1.5,
   },
   // leave in a transparent, downscaled state
   atLeave: {
@@ -234,7 +234,7 @@ const OurHistoryView = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Wrapper>
-        <HidingTitle>O NAS</HidingTitle>
+        <HidingTitle color="#ECECF9">O NAS</HidingTitle>
         <StyledWrapper>
           <Title>Nasza historia</Title>
           <StyledUl>

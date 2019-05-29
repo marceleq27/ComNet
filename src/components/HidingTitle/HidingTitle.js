@@ -9,26 +9,35 @@ const StyledTitle = styled.h3`
     position: absolute;
     height: 300px;
     width: 75vw;
-    padding: 50px;
+    padding: 50px 0 50px 20px;
     font-weight: ${({ theme }) => theme.bold};
     font-size: 170px;
-    color: #eee;
-    z-index: -5;
+    color: ${props => props.color};
+    z-index: -1;
     text-align: left;
+    letter-spacing: 30px;
   }
   @media (min-width: 1400px) {
-    font-size: 240px;
+    font-size: 200px;
   }
 `;
 
-const HidingTitle = ({ children }) => {
-  return <StyledTitle>{children}</StyledTitle>;
+const HidingTitle = ({ children, color, className }) => {
+  return (
+    <StyledTitle color={color} className={className}>
+      {children}
+    </StyledTitle>
+  );
 };
 HidingTitle.propTypes = {
   children: PropTypes.string,
+  color: PropTypes.string,
+  className: PropTypes.string,
 };
 
 HidingTitle.defaultProps = {
   children: null,
+  color: '#ECECF9',
+  className: 'null',
 };
 export default HidingTitle;
