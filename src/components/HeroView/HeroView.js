@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import img from 'assets/Fala.png';
 import hamburger from 'assets/hamburger.png';
@@ -74,13 +74,20 @@ const PrimaryButton = styled(Button)`
   left: 50%;
   transform: translateX(-50%);
   transition: 0.2s;
+  cursor: pointer;
   &:hover {
     background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.pink};
   }
   @media (min-width: 768px) {
     left: 30%;
     top: 70%;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: ${({ theme }) => theme.pink};
+    }
   }
 `;
 const SecondaryButton = styled(Button)`
@@ -92,31 +99,39 @@ const SecondaryButton = styled(Button)`
   &:hover {
     background-color: ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.pink};
+    cursor: pointer;
   }
   @media (min-width: 768px) {
     left: 70%;
     top: 70%;
   }
 `;
-const HeroView = () => {
-  return (
-    <StyledHero>
-      <StyledHamburger>
-        <img src={hamburger} alt="hamburger" />
-      </StyledHamburger>
-      <StyledWrapper>
-        <StyledText>COM - NET</StyledText>
-        <h1>
-          Salon komputerowy <br /> stworzony dla Ciebie
-        </h1>
-      </StyledWrapper>
-      <StyledPicture>
-        <img src={img} alt="fala" />
-      </StyledPicture>
-      <PrimaryButton>Zobacz ofertę</PrimaryButton>
-      <SecondaryButton>Kontakt</SecondaryButton>
-    </StyledHero>
-  );
-};
+
+class HeroView extends Component {
+  state = {};
+
+  render() {
+    return (
+      <StyledHero>
+        <StyledHamburger>
+          <img src={hamburger} alt="hamburger" />
+        </StyledHamburger>
+        <StyledWrapper>
+          <StyledText>COM - NET</StyledText>
+          <h1>
+            Salon komputerowy <br /> stworzony dla Ciebie
+          </h1>
+        </StyledWrapper>
+        <StyledPicture>
+          <img src={img} alt="fala" />
+        </StyledPicture>
+        <PrimaryButton>
+          <a href="#section1">Zobacz ofertę</a>
+        </PrimaryButton>
+        <SecondaryButton>Kontakt</SecondaryButton>
+      </StyledHero>
+    );
+  }
+}
 
 export default HeroView;

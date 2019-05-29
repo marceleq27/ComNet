@@ -19,7 +19,7 @@ const Button = ({ className, children }) => {
 };
 Button.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.node,
 };
 Button.defaultProps = {
   className: 'null',

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import image from 'assets/Fala2.png';
 import ListItem from 'components/HelpView/ListItem';
 import data from 'utils/data';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 const StyledWrapper = styled.section`
   position: relative;
@@ -11,7 +12,6 @@ const StyledWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: auto;
   padding: 25px 0;
   background: linear-gradient(
     89deg,
@@ -80,18 +80,27 @@ const Wrapper = styled.div`
     padding: 0 0 100px;
   }
 `;
-const HelpView = () => {
-  return (
-    <StyledWrapper>
-      <StyledImg src={image} alt="svg" srcSet="" />
-      <h2>W CZYM MOŻEMY CI POMÓC?</h2>
-      <Wrapper>
-        {data.map(item => (
-          <ListItem key={item.id} text={item.text} img={item.img} />
-        ))}
-      </Wrapper>
-    </StyledWrapper>
-  );
-};
+configureAnchors({ offset: -60, scrollDuration: 500 });
+class HelpView extends Component {
+  state = {};
+
+  render() {
+    return (
+      <>
+        <ScrollableAnchor id="section1">
+          <StyledWrapper>
+            <StyledImg src={image} alt="svg" srcSet="" />
+            <h2>W CZYM MOŻEMY CI POMÓC?</h2>
+            <Wrapper>
+              {data.map(item => (
+                <ListItem key={item.id} text={item.text} img={item.img} />
+              ))}
+            </Wrapper>
+          </StyledWrapper>
+        </ScrollableAnchor>
+      </>
+    );
+  }
+}
 
 export default HelpView;

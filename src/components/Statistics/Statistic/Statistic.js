@@ -32,7 +32,7 @@ const StyledSpan = styled.span`
 
 const Statistic = ({ width, background, time, text }) => {
   return (
-    <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+    <ScrollAnimation animateIn="fadeInLeft" animateOnce>
       <StyledSpan width={width} background={background} time={`${time}s`} text={text} />
     </ScrollAnimation>
   );

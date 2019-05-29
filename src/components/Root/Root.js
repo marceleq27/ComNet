@@ -7,6 +7,7 @@ import { theme } from 'theme/mainTheme';
 import OurHistoryView from 'components/OurHistoryView/OurHistoryView';
 import HelpView from 'components/HelpView/HelpView';
 import StatisticsFAQView from 'components/StatisticsFAQView/StatisticsFAQView';
+import ContactAboutView from 'components/ContactAboutView/ContactAboutView';
 
 const Root = () => {
   return (
@@ -26,6 +27,7 @@ const Root = () => {
           <OurHistoryView />
           <HelpView />
           <StatisticsFAQView />
+          <ContactAboutView />
         </>
       </ThemeProvider>
     </>
