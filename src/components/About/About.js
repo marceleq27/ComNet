@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from 'components/Title/Title';
+import HidingTitle from 'components/HidingTitle/HidingTitle';
 
 const Wrapper = styled.div`
   display: flex;
@@ -8,10 +9,11 @@ const Wrapper = styled.div`
   justify-content: space-around;
   flex-direction: column;
   position: relative;
-  padding: 20px;
   margin-top: 20px;
   @media (min-width: 1024px) {
     flex-basis: 50%;
+    justify-content: center;
+    padding: 30px;
   }
 `;
 const Card = styled.div`
@@ -39,7 +41,14 @@ const StyledParagraph = styled.p`
   font-size: 10px;
   font-weight: ${({ theme }) => theme.bold};
   margin-left: 5px;
+  line-height: 130%;
   text-align: left;
+  @media (min-width: 360px) {
+    font-size: 11px;
+  }
+  @media (min-width: 414px) {
+    font-size: 12px;
+  }
   @media (min-width: 1024px) {
     font-size: 13px;
   }
@@ -59,14 +68,30 @@ const StyledName = styled.p`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (min-width: 360px) {
+    font-size: 13px;
+  }
+  @media (min-width: 414px) {
+    font-size: 14px;
+  }
   @media (min-width: 1024px) {
     font-size: 15px;
+  }
+`;
+const StyledHidingTitle = styled(HidingTitle)`
+  top: -10%;
+  left: 0;
+  font-size: 120px;
+  letter-spacing: 10px;
+  @media (min-width: 1400px) {
+    font-size: 160px;
   }
 `;
 const About = () => {
   return (
     <Wrapper className="contact">
       <Title>Co o nas mówią</Title>
+      <StyledHidingTitle>OPINIE</StyledHidingTitle>
       <Card>
         <StyledParagraph>
           Szybko i profesjonalnie, co najważniejsze bez zbędnego oczekiwania. Jedyne miejsce gdzie

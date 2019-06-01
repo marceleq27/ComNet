@@ -89,7 +89,7 @@ class HelpView extends Component {
       <>
         <ScrollableAnchor id="section1">
           <StyledWrapper>
-            <StyledImg src={image} alt="svg" srcSet="" />
+            <StyledImg src={image} alt="svg" />
             <h2>W CZYM MOŻEMY CI POMÓC?</h2>
             <Wrapper>
               {data.map(item => (
