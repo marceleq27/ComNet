@@ -78,7 +78,7 @@ const ExperienceWrapper = styled.div`
 `;
 const Wrapper = styled.div`
   margin-top: 10px;
-  padding: 20px 30px;
+  padding: 20px 0;
   width: 100%;
   &:nth-of-type(1) {
     margin-top: 30px;

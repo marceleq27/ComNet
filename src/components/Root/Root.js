@@ -9,6 +9,7 @@ import HelpView from 'components/HelpView/HelpView';
 import StatisticsFAQView from 'components/StatisticsFAQView/StatisticsFAQView';
 import ContactAboutView from 'components/ContactAboutView/ContactAboutView';
 import ExperienceView from 'components/ExperienceView/ExperienceView';
+import FooterView from 'components/FooterView/FooterView';
 
 const Root = () => {
   return (
@@ -37,6 +38,7 @@ const Root = () => {
             style={{ border: 0, width: `${100}vw`, height: 450 }}
             allowFullScreen
           />
+          <FooterView />
         </>
       </ThemeProvider>
     </>

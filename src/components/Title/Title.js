@@ -25,14 +25,16 @@ const StyledH2 = styled.h2`
   }
 `;
 
-const Title = ({ children }) => {
-  return <StyledH2>{children}</StyledH2>;
+const Title = ({ children, className }) => {
+  return <StyledH2 className={className}>{children}</StyledH2>;
 };
 Title.propTypes = {
   children: PropTypes.string,
+  className: PropTypes.string,
 };
 
 Title.defaultProps = {
   children: null,
+  className: null,
 };
 export default Title;
