@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b00e93570c6d241e2eb69f4502697fcf",
+    "revision": "8d512e3d5a72629a59a513fedea64366",
     "url": "/ComNet/index.html"
   },
   {
-    "revision": "28e135e23c56bc269904",
+    "revision": "c09d0cf86dc4acdf79a3",
     "url": "/ComNet/static/css/2.79692622.chunk.css"
   },
   {
-    "revision": "28e135e23c56bc269904",
-    "url": "/ComNet/static/js/2.f550727d.chunk.js"
+    "revision": "c09d0cf86dc4acdf79a3",
+    "url": "/ComNet/static/js/2.ace632b7.chunk.js"
   },
   {
-    "revision": "8383032689df6bb17c0b",
-    "url": "/ComNet/static/js/main.e57391d5.chunk.js"
+    "revision": "93297b483e16f569ae05",
+    "url": "/ComNet/static/js/main.9c5c1fec.chunk.js"
   },
   {
     "revision": "7d47ddd1c1f5aaf2fa8e",
@@ -54,6 +54,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4227516c4ecade7150fa83fb55c8ef9d",
     "url": "/ComNet/static/media/Fala2.4227516c.png"
+  },
+  {
+    "revision": "61b776ae14440435451bf3fac83e9453",
+    "url": "/ComNet/static/media/Geo.61b776ae.png"
+  },
+  {
+    "revision": "70ec82578077ce3030093ab1cbea5bdf",
+    "url": "/ComNet/static/media/Ind.70ec8257.png"
+  },
+  {
+    "revision": "9e8e1ae713698a2eb92ab464a5e9d32a",
+    "url": "/ComNet/static/media/Kad.9e8e1ae7.png"
+  },
+  {
+    "revision": "f00394d996b503689eafbd6b9ccaee6f",
+    "url": "/ComNet/static/media/Phone.f00394d9.png"
+  },
+  {
+    "revision": "ac0ae01f6addc9b660e15ea196526dd7",
+    "url": "/ComNet/static/media/Star.ac0ae01f.png"
+  },
+  {
+    "revision": "fd4e8338d87ccb1f0fbde80e0773589b",
+    "url": "/ComNet/static/media/Time.fd4e8338.png"
   },
   {
     "revision": "fe931bc71fdd3a1b96b801c1084264a2",
