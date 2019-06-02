@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d512e3d5a72629a59a513fedea64366",
+    "revision": "49aa62ae19cdfb0f5f7b14a83aa897af",
     "url": "/ComNet/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ComNet/static/js/2.ace632b7.chunk.js"
   },
   {
-    "revision": "93297b483e16f569ae05",
-    "url": "/ComNet/static/js/main.9c5c1fec.chunk.js"
+    "revision": "8f111fc69a9574b2d3bd",
+    "url": "/ComNet/static/js/main.ae8dbbcf.chunk.js"
   },
   {
     "revision": "7d47ddd1c1f5aaf2fa8e",
