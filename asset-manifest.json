@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ComNet/static/css/main.61c4b11c.chunk.css",
-    "main.js": "/ComNet/static/js/main.53a4b2af.chunk.js",
-    "main.js.map": "/ComNet/static/js/main.53a4b2af.chunk.js.map",
+    "main.js": "/ComNet/static/js/main.4645bf06.chunk.js",
+    "main.js.map": "/ComNet/static/js/main.4645bf06.chunk.js.map",
     "runtime~main.js": "/ComNet/static/js/runtime~main.2682f8dd.js",
     "runtime~main.js.map": "/ComNet/static/js/runtime~main.2682f8dd.js.map",
     "static/css/2.79692622.chunk.css": "/ComNet/static/css/2.79692622.chunk.css",
     "static/js/2.752627a7.chunk.js": "/ComNet/static/js/2.752627a7.chunk.js",
     "static/js/2.752627a7.chunk.js.map": "/ComNet/static/js/2.752627a7.chunk.js.map",
     "index.html": "/ComNet/index.html",
-    "precache-manifest.e47e18184c09eb12b0b0178c164af317.js": "/ComNet/precache-manifest.e47e18184c09eb12b0b0178c164af317.js",
+    "precache-manifest.b17bcbeca88b3e61e3a21e8ebe25a7a5.js": "/ComNet/precache-manifest.b17bcbeca88b3e61e3a21e8ebe25a7a5.js",
     "service-worker.js": "/ComNet/service-worker.js",
     "static/css/2.79692622.chunk.css.map": "/ComNet/static/css/2.79692622.chunk.css.map",
     "static/css/main.61c4b11c.chunk.css.map": "/ComNet/static/css/main.61c4b11c.chunk.css.map",

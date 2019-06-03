@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e8267d2e0fa72b26cf2893698e3f51d",
+    "revision": "80503cacfeba8d046a5e9a139fd0c61e",
     "url": "/ComNet/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ComNet/static/css/2.79692622.chunk.css"
   },
   {
-    "revision": "11bc694df4ff66083ec5",
+    "revision": "2dad7412cea932f866d6",
     "url": "/ComNet/static/css/main.61c4b11c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ComNet/static/js/2.752627a7.chunk.js"
   },
   {
-    "revision": "11bc694df4ff66083ec5",
-    "url": "/ComNet/static/js/main.53a4b2af.chunk.js"
+    "revision": "2dad7412cea932f866d6",
+    "url": "/ComNet/static/js/main.4645bf06.chunk.js"
   },
   {
     "revision": "7d47ddd1c1f5aaf2fa8e",
