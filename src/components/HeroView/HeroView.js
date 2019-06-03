@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import img from 'assets/Fala.png';
-import hamburger from 'assets/hamburger.png';
 import Button from 'components/Button/Button';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const StyledHero = styled.header`
   background: linear-gradient(
@@ -53,21 +53,7 @@ const StyledPicture = styled.picture`
     display: block;
   }
 `;
-const StyledHamburger = styled.picture`
-  img {
-    width: 10%;
-    display: block;
-    position: absolute;
-    right: 7%;
-    top: 5%;
-    @media (min-width: 1024px) {
-      width: 4%;
-    }
-    @media (min-width: 1600px) {
-      width: 3%;
-    }
-  }
-`;
+
 const PrimaryButton = styled(Button)`
   position: absolute;
   top: 60%;
@@ -112,24 +98,25 @@ class HeroView extends Component {
 
   render() {
     return (
-      <StyledHero>
-        <StyledHamburger>
-          <img src={hamburger} alt="hamburger" />
-        </StyledHamburger>
-        <StyledWrapper>
-          <StyledText>COM - NET</StyledText>
-          <h1>
-            Salon komputerowy <br /> stworzony dla Ciebie
-          </h1>
-        </StyledWrapper>
-        <StyledPicture>
-          <img src={img} alt="fala" />
-        </StyledPicture>
-        <PrimaryButton>
-          <a href="#section1">Zobacz ofertę</a>
-        </PrimaryButton>
-        <SecondaryButton>Kontakt</SecondaryButton>
-      </StyledHero>
+      <ScrollableAnchor id="home">
+        <StyledHero>
+          <StyledWrapper>
+            <StyledText>COM - NET</StyledText>
+            <h1>
+              Salon komputerowy <br /> stworzony dla Ciebie
+            </h1>
+          </StyledWrapper>
+          <StyledPicture>
+            <img src={img} alt="fala" />
+          </StyledPicture>
+          <PrimaryButton>
+            <a href="#section1">Zobacz ofertę</a>
+          </PrimaryButton>
+          <a href="#contact">
+            <SecondaryButton>Kontakt</SecondaryButton>
+          </a>
+        </StyledHero>
+      </ScrollableAnchor>
     );
   }
 }

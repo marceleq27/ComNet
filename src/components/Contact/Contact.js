@@ -5,6 +5,7 @@ import time from 'assets/Time.png';
 import geo from 'assets/Geo.png';
 import phone from 'assets/Phone.png';
 import mail from 'assets/Mail.png';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const StyledWrapper = styled.div`
   margin-top: 50px;
@@ -59,57 +60,59 @@ const Text = styled.div`
 
 const Contact = () => {
   return (
-    <StyledWrapper>
-      <Title>Kontakt</Title>
-      <Wrapper>
-        <StyledPicture>
-          <img src={time} alt="time" />
-        </StyledPicture>
-        <Text>
-          <p>Godziny kontaktu</p>
-          <h6>
-            Pon - Pt w godz. 9:00 - 17:00 <br />
-            Sob w godz. 9:00 - 13:00
-          </h6>
-        </Text>
-      </Wrapper>
-      <Wrapper>
-        <StyledPicture>
-          <img src={phone} alt="phone" />
-        </StyledPicture>
-        <Text>
-          <p>na numery telefonu</p>
-          <h6>
-            607 035 025 <br />
-            74 645 65 00
-          </h6>
-        </Text>
-      </Wrapper>
-      <Wrapper>
-        <StyledPicture>
-          <img src={mail} alt="mail" />
-        </StyledPicture>
-        <Text>
-          <p>na adresy e-mail</p>
-          <h6>
-            info@com-net.com.pl <br />
-            ksero@com-net.com.pl
-          </h6>
-        </Text>
-      </Wrapper>
-      <Wrapper>
-        <StyledPicture>
-          <img src={geo} alt="geo" />
-        </StyledPicture>
-        <Text>
-          <p>w naszej siedzibie</p>
-          <h6>
-            58-200 Dzierżoniów <br />
-            ul. Wrocławska 29
-          </h6>
-        </Text>
-      </Wrapper>
-    </StyledWrapper>
+    <ScrollableAnchor id="contact">
+      <StyledWrapper>
+        <Title>Kontakt</Title>
+        <Wrapper>
+          <StyledPicture>
+            <img src={time} alt="time" />
+          </StyledPicture>
+          <Text>
+            <p>Godziny kontaktu</p>
+            <h6>
+              Pon - Pt w godz. 9:00 - 17:00 <br />
+              Sob w godz. 9:00 - 13:00
+            </h6>
+          </Text>
+        </Wrapper>
+        <Wrapper>
+          <StyledPicture>
+            <img src={phone} alt="phone" />
+          </StyledPicture>
+          <Text>
+            <p>na numery telefonu</p>
+            <h6>
+              607 035 025 <br />
+              74 645 65 00
+            </h6>
+          </Text>
+        </Wrapper>
+        <Wrapper>
+          <StyledPicture>
+            <img src={mail} alt="mail" />
+          </StyledPicture>
+          <Text>
+            <p>na adresy e-mail</p>
+            <h6>
+              info@com-net.com.pl <br />
+              ksero@com-net.com.pl
+            </h6>
+          </Text>
+        </Wrapper>
+        <Wrapper>
+          <StyledPicture>
+            <img src={geo} alt="geo" />
+          </StyledPicture>
+          <Text>
+            <p>w naszej siedzibie</p>
+            <h6>
+              58-200 Dzierżoniów <br />
+              ul. Wrocławska 29
+            </h6>
+          </Text>
+        </Wrapper>
+      </StyledWrapper>
+    </ScrollableAnchor>
   );
 };
 

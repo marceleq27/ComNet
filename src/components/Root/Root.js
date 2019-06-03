@@ -10,6 +10,7 @@ import StatisticsFAQView from 'components/StatisticsFAQView/StatisticsFAQView';
 import ContactAboutView from 'components/ContactAboutView/ContactAboutView';
 import ExperienceView from 'components/ExperienceView/ExperienceView';
 import FooterView from 'components/FooterView/FooterView';
+import Navigation from 'components/Navigation/Navigation';
 
 const Root = () => {
   return (
@@ -25,6 +26,7 @@ const Root = () => {
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <>
+          <Navigation />
           <HeroView />
           <OurHistoryView />
           <HelpView />
@@ -35,7 +37,7 @@ const Root = () => {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2525.4622220137326!2d16.653335238098148!3d50.72991540132808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a71eb6138e7a55a!2sCom+Net-+komputery!5e0!3m2!1spl!2spl!4v1559408282794!5m2!1spl!2spl"
             title="map"
             frameBorder="0"
-            style={{ border: 0, width: `${100}vw`, height: 450 }}
+            style={{ border: 0, width: `${100}%`, height: 450, position: 'relative', zIndex: 5 }}
             allowFullScreen
           />
           <FooterView />

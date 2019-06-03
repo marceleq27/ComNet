@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Title from 'components/Title/Title';
 import HidingTitle from 'components/HidingTitle/HidingTitle';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const Wrapper = styled.div`
   display: flex;
@@ -89,37 +90,39 @@ const StyledHidingTitle = styled(HidingTitle)`
 `;
 const About = () => {
   return (
-    <Wrapper className="contact">
-      <Title>Co o nas mówią</Title>
-      <StyledHidingTitle>OPINIE</StyledHidingTitle>
-      <Card>
-        <StyledParagraph>
-          Szybko i profesjonalnie, co najważniejsze bez zbędnego oczekiwania. Jedyne miejsce gdzie
-          można porozmawiać z kimś, kto ma wiedzę na temat mocnych gamingowych komputerów i potrafi
-          dużo doradzić.
-        </StyledParagraph>
-        <StyledName>Daniel M.</StyledName>
-        <Arrow />
-      </Card>
-      <Card>
-        <StyledParagraph>
-          Polecam. Bardzo miła obsługa i kompetentnie wykwalifikowani pracownicy. Jeśli ktoś
-          potrzebuje naprawić bądź nabyć informację na temat swojego sprzętu powinien udać się
-          właśnie tu.
-        </StyledParagraph>
-        <StyledName>Sebastian B.</StyledName>
-        <Arrow />
-      </Card>
-      <Card>
-        <StyledParagraph>
-          Fachowo, a co najważniejsze szybko. Usterka usunięta w ciągu paru godzin, wszystko hula.
-          Polecam. Dodam jeszcze, że jest to już mój kolejny kontakt z tą firmą na przestrzeni kilku
-          lat i za każdym razem jestem zadowolony.
-        </StyledParagraph>
-        <StyledName>Andrzej P.</StyledName>
-        <Arrow />
-      </Card>
-    </Wrapper>
+    <ScrollableAnchor id="opinions">
+      <Wrapper className="contact">
+        <Title>Co o nas mówią</Title>
+        <StyledHidingTitle>OPINIE</StyledHidingTitle>
+        <Card>
+          <StyledParagraph>
+            Szybko i profesjonalnie, co najważniejsze bez zbędnego oczekiwania. Jedyne miejsce gdzie
+            można porozmawiać z kimś, kto ma wiedzę na temat mocnych gamingowych komputerów i
+            potrafi dużo doradzić.
+          </StyledParagraph>
+          <StyledName>Daniel M.</StyledName>
+          <Arrow />
+        </Card>
+        <Card>
+          <StyledParagraph>
+            Polecam. Bardzo miła obsługa i kompetentnie wykwalifikowani pracownicy. Jeśli ktoś
+            potrzebuje naprawić bądź nabyć informację na temat swojego sprzętu powinien udać się
+            właśnie tu.
+          </StyledParagraph>
+          <StyledName>Sebastian B.</StyledName>
+          <Arrow />
+        </Card>
+        <Card>
+          <StyledParagraph>
+            Fachowo, a co najważniejsze szybko. Usterka usunięta w ciągu paru godzin, wszystko hula.
+            Polecam. Dodam jeszcze, że jest to już mój kolejny kontakt z tą firmą na przestrzeni
+            kilku lat i za każdym razem jestem zadowolony.
+          </StyledParagraph>
+          <StyledName>Andrzej P.</StyledName>
+          <Arrow />
+        </Card>
+      </Wrapper>
+    </ScrollableAnchor>
   );
 };
 

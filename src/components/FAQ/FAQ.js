@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Title from 'components/Title/Title';
 import HidingTitle from 'components/HidingTitle/HidingTitle';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const StyledWrapper = styled.section`
   position: relative;
@@ -126,108 +127,116 @@ class FAQ extends Component {
   render() {
     const { isActive, isActive2, isActive3, isActive4 } = this.state;
     return (
-      <StyledWrapper>
-        <StyledHidingTitle color="white">FAQ</StyledHidingTitle>
-        <Title>Często zadawane pytania</Title>
-        <Wrapper>
-          <Card style={{ height: isActive ? '320px' : '120px', transition: '.5s' }}>
-            <h4>Jaki jest koszt naprawy mojego komputera / laptopa?</h4>
-            <p
-              style={{
-                opacity: isActive ? '1' : '0',
-                transition: '.5s',
-              }}
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-              corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-              possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-              recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-              tenetur adipisci ut necessitatibus aliquam?
-            </p>
-            <Arrow
-              style={{
-                height: isActive ? '320px' : '120px',
-                transition: '.5s',
-                background: isActive ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)' : ' #ed1c94',
-              }}
-            >
-              <StyledButton onClick={this.handleClick}>{isActive ? '-' : '+'}</StyledButton>
-            </Arrow>
-          </Card>
-          <Card style={{ height: isActive2 ? '320px' : '120px', transition: '.5s' }}>
-            <h4>Po jakim czasie można odebrać naprawiony sprzęt?</h4>
-            <p
-              style={{
-                opacity: isActive2 ? '1' : '0',
-                transition: '.5s',
-              }}
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-              corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-              possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-              recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-              tenetur adipisci ut necessitatibus aliquam?
-            </p>
-            <Arrow
-              style={{
-                height: isActive2 ? '320px' : '120px',
-                transition: '.5s',
-                background: isActive2 ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)' : ' #ed1c94',
-              }}
-            >
-              <StyledButton onClick={this.handleClick2}>{isActive2 ? '-' : '+'}</StyledButton>
-            </Arrow>
-          </Card>
-          <Card style={{ height: isActive3 ? '320px' : '120px', transition: '.5s' }}>
-            <h4>Ile kosztuje zakup komputera/ laptopa w waszej firmie?</h4>
-            <p
-              style={{
-                opacity: isActive3 ? '1' : '0',
-                transition: '.5s',
-              }}
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-              corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-              possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-              recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-              tenetur adipisci ut necessitatibus aliquam?
-            </p>
-            <Arrow
-              style={{
-                height: isActive3 ? '320px' : '120px',
-                transition: '.5s',
-                background: isActive3 ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)' : ' #ed1c94',
-              }}
-            >
-              <StyledButton onClick={this.handleClick3}>{isActive3 ? '-' : '+'}</StyledButton>
-            </Arrow>
-          </Card>
-          <Card style={{ height: isActive4 ? '320px' : '120px', transition: '.5s' }}>
-            <h4>Jaki jest czas oczekiwania na zamówiony sprzęt?</h4>
-            <p
-              style={{
-                opacity: isActive4 ? '1' : '0',
-                transition: '.5s',
-              }}
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-              corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-              possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-              recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-              tenetur adipisci ut necessitatibus aliquam?
-            </p>
-            <Arrow
-              style={{
-                height: isActive4 ? '320px' : '120px',
-                transition: '.5s',
-                background: isActive4 ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)' : ' #ed1c94',
-              }}
-            >
-              <StyledButton onClick={this.handleClick4}>{isActive4 ? '-' : '+'}</StyledButton>
-            </Arrow>
-          </Card>
-        </Wrapper>
-      </StyledWrapper>
+      <ScrollableAnchor id="FAQ">
+        <StyledWrapper>
+          <StyledHidingTitle color="white">FAQ</StyledHidingTitle>
+          <Title>Często zadawane pytania</Title>
+          <Wrapper>
+            <Card style={{ height: isActive ? '320px' : '120px', transition: '.5s' }}>
+              <h4>Jaki jest koszt naprawy mojego komputera / laptopa?</h4>
+              <p
+                style={{
+                  opacity: isActive ? '1' : '0',
+                  transition: '.5s',
+                }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
+                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
+                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
+                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
+                tenetur adipisci ut necessitatibus aliquam?
+              </p>
+              <Arrow
+                style={{
+                  height: isActive ? '320px' : '120px',
+                  transition: '.5s',
+                  background: isActive ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)' : ' #ed1c94',
+                }}
+              >
+                <StyledButton onClick={this.handleClick}>{isActive ? '-' : '+'}</StyledButton>
+              </Arrow>
+            </Card>
+            <Card style={{ height: isActive2 ? '320px' : '120px', transition: '.5s' }}>
+              <h4>Po jakim czasie można odebrać naprawiony sprzęt?</h4>
+              <p
+                style={{
+                  opacity: isActive2 ? '1' : '0',
+                  transition: '.5s',
+                }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
+                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
+                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
+                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
+                tenetur adipisci ut necessitatibus aliquam?
+              </p>
+              <Arrow
+                style={{
+                  height: isActive2 ? '320px' : '120px',
+                  transition: '.5s',
+                  background: isActive2
+                    ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)'
+                    : ' #ed1c94',
+                }}
+              >
+                <StyledButton onClick={this.handleClick2}>{isActive2 ? '-' : '+'}</StyledButton>
+              </Arrow>
+            </Card>
+            <Card style={{ height: isActive3 ? '320px' : '120px', transition: '.5s' }}>
+              <h4>Ile kosztuje zakup komputera/ laptopa w waszej firmie?</h4>
+              <p
+                style={{
+                  opacity: isActive3 ? '1' : '0',
+                  transition: '.5s',
+                }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
+                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
+                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
+                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
+                tenetur adipisci ut necessitatibus aliquam?
+              </p>
+              <Arrow
+                style={{
+                  height: isActive3 ? '320px' : '120px',
+                  transition: '.5s',
+                  background: isActive3
+                    ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)'
+                    : ' #ed1c94',
+                }}
+              >
+                <StyledButton onClick={this.handleClick3}>{isActive3 ? '-' : '+'}</StyledButton>
+              </Arrow>
+            </Card>
+            <Card style={{ height: isActive4 ? '320px' : '120px', transition: '.5s' }}>
+              <h4>Jaki jest czas oczekiwania na zamówiony sprzęt?</h4>
+              <p
+                style={{
+                  opacity: isActive4 ? '1' : '0',
+                  transition: '.5s',
+                }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
+                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
+                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
+                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
+                tenetur adipisci ut necessitatibus aliquam?
+              </p>
+              <Arrow
+                style={{
+                  height: isActive4 ? '320px' : '120px',
+                  transition: '.5s',
+                  background: isActive4
+                    ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)'
+                    : ' #ed1c94',
+                }}
+              >
+                <StyledButton onClick={this.handleClick4}>{isActive4 ? '-' : '+'}</StyledButton>
+              </Arrow>
+            </Card>
+          </Wrapper>
+        </StyledWrapper>
+      </ScrollableAnchor>
     );
   }
 }

@@ -6,6 +6,7 @@ import Button from 'components/Button/Button';
 import img from 'assets/computer.png';
 import Title from 'components/Title/Title';
 import HidingTitle from 'components/HidingTitle/HidingTitle';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const StyledWrapper = styled.section`
   margin-top: 5%;
@@ -147,7 +148,9 @@ function przeglad() {
       sprzęt. <br /> <br /> Od podjęcia decyzji do odbioru swojej wymarzonej maszyny czekasz
       zazwyczaj jeden dzień roboczy. Komputer odbierasz w pełni skonfigurowany. Montaż i
       konfiguracja podzespołów gratis.
-      <SecondaryButton>Sprawdź więcej</SecondaryButton>
+      <a href="#contact">
+        <SecondaryButton>Kontakt</SecondaryButton>
+      </a>
     </StyledRelative>
   );
 }
@@ -167,7 +170,9 @@ function informacje() {
       <br /> <br /> Jeżeli jesteś klientem stawiającym na jakość wykonania i nie masz ochoty na
       późniejsze serwisowanie źle złożonego komputera to trafiłeś w idealne miejsce. Zapraszamy do
       naszego salonu!
-      <SecondaryButton>Sprawdź więcej</SecondaryButton>
+      <a href="#contact">
+        <SecondaryButton>Kontakt</SecondaryButton>
+      </a>
     </StyledRelative>
   );
 }
@@ -186,7 +191,9 @@ function naszewartosci() {
       <br /> <br /> Każde zlecenie które nam powierzysz to twoje zaufanie do nas. Staramy się
       najmocniej jak możemy, aby tego zaufania nie stracić. Każdy krok który musimy podjąć bez
       Twojej obecności u nas jest wpierw konsultowany z Tobą.
-      <SecondaryButton>Sprawdź więcej</SecondaryButton>
+      <a href="#contact">
+        <SecondaryButton>Kontakt</SecondaryButton>
+      </a>
     </StyledRelative>
   );
 }
@@ -233,43 +240,45 @@ const Wrapper = styled.section`
 const OurHistoryView = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Wrapper>
-        <HidingTitle color="#ECECF9">O NAS</HidingTitle>
-        <StyledWrapper>
-          <Title>Nasza historia</Title>
-          <StyledUl>
-            <li>
-              <NavLink to="/" exact activeClassName="active">
-                Przegląd
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/informacje" activeClassName="active">
-                Informacje
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/naszewartosci" activeClassName="active">
-                Nasze wartości
-              </NavLink>
-            </li>
-          </StyledUl>
-          <AnimatedSwitch
-            atEnter={bounceTransition.atEnter}
-            atLeave={bounceTransition.atLeave}
-            atActive={bounceTransition.atActive}
-            mapStyles={mapStyles}
-            className="route-wrapper"
-          >
-            <Route path="/" exact component={przeglad} />
-            <Route path="/informacje" component={informacje} />
-            <Route path="/naszewartosci" component={naszewartosci} />
-          </AnimatedSwitch>
-        </StyledWrapper>
-        <StyledPicture>
-          <img src={img} alt="komputer" />
-        </StyledPicture>
-      </Wrapper>
+      <ScrollableAnchor id="history">
+        <Wrapper>
+          <HidingTitle color="#ECECF9">O NAS</HidingTitle>
+          <StyledWrapper>
+            <Title>Nasza historia</Title>
+            <StyledUl>
+              <li>
+                <NavLink to="/" exact activeClassName="active">
+                  Przegląd
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/informacje" activeClassName="active">
+                  Informacje
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/naszewartosci" activeClassName="active">
+                  Nasze wartości
+                </NavLink>
+              </li>
+            </StyledUl>
+            <AnimatedSwitch
+              atEnter={bounceTransition.atEnter}
+              atLeave={bounceTransition.atLeave}
+              atActive={bounceTransition.atActive}
+              mapStyles={mapStyles}
+              className="route-wrapper"
+            >
+              <Route path="/" exact component={przeglad} />
+              <Route path="/informacje" component={informacje} />
+              <Route path="/naszewartosci" component={naszewartosci} />
+            </AnimatedSwitch>
+          </StyledWrapper>
+          <StyledPicture>
+            <img src={img} alt="komputer" />
+          </StyledPicture>
+        </Wrapper>
+      </ScrollableAnchor>
     </Router>
   );
 };

@@ -30,7 +30,7 @@ const HidingTitle = ({ children, color, className }) => {
   );
 };
 HidingTitle.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
   color: PropTypes.string,
   className: PropTypes.string,
 };

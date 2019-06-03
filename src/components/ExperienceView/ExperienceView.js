@@ -4,6 +4,7 @@ import img from 'assets/Fala2.png';
 import heart from 'assets/Ind.png';
 import people from 'assets/Kad.png';
 import star from 'assets/Star.png';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const StyledWrapper = styled.section`
   position: relative;
@@ -130,45 +131,47 @@ const StyledPicture = styled.picture`
 `;
 const ExperienceView = () => {
   return (
-    <StyledWrapper>
-      <StyledImg src={img} alt="svg" />
-      <h2>NASZE ATUTY</h2>
-      <ExperienceWrapper>
-        <Wrapper>
-          <StyledPicture>
-            <img src={heart} alt="heart" />
-          </StyledPicture>
-          <h3>Indywidualne podjeście</h3>
-          <p>
-            W przeciwieństwie do wielu innych firm, stosujemy indywidualne podejście do każdego
-            klienta, i nigdy nie proponujemy zestawu standardowych decyzji dla Ciebie lub Twojej
-            firmy.
-          </p>
-        </Wrapper>
-        <Wrapper>
-          <StyledPicture>
-            <img src={people} alt="people" />
-          </StyledPicture>
-          <h3>Doświadczona kadra</h3>
-          <p>
-            Com-Net to oddana i wykwalifikowana kadra gotowa, żeby pomóc Tobie w potrzebie i służyć
-            fachowym doradztwem i pomocą. Ponad 20 lat doświadczenia czyni nas ekspertami w swoim
-            fachu.
-          </p>
-        </Wrapper>
-        <Wrapper>
-          <StyledPicture>
-            <img src={star} alt="star" />
-          </StyledPicture>
-          <h3>Atrakcyjna oferta</h3>
-          <p>
-            Dostęp do wszystkich podzespołów i peryferiów komputerowych czołowych marek, ponad 500
-            modeli laptopów to atut, którym mało która firma może się pochwalić. Wszystko to
-            znajdziesz w naszym salonie.
-          </p>
-        </Wrapper>
-      </ExperienceWrapper>
-    </StyledWrapper>
+    <ScrollableAnchor id="experience">
+      <StyledWrapper>
+        <StyledImg src={img} alt="svg" />
+        <h2>NASZE ATUTY</h2>
+        <ExperienceWrapper>
+          <Wrapper>
+            <StyledPicture>
+              <img src={heart} alt="heart" />
+            </StyledPicture>
+            <h3>Indywidualne podjeście</h3>
+            <p>
+              W przeciwieństwie do wielu innych firm, stosujemy indywidualne podejście do każdego
+              klienta, i nigdy nie proponujemy zestawu standardowych decyzji dla Ciebie lub Twojej
+              firmy.
+            </p>
+          </Wrapper>
+          <Wrapper>
+            <StyledPicture>
+              <img src={people} alt="people" />
+            </StyledPicture>
+            <h3>Doświadczona kadra</h3>
+            <p>
+              Com-Net to oddana i wykwalifikowana kadra gotowa, żeby pomóc Tobie w potrzebie i
+              służyć fachowym doradztwem i pomocą. Ponad 20 lat doświadczenia czyni nas ekspertami w
+              swoim fachu.
+            </p>
+          </Wrapper>
+          <Wrapper>
+            <StyledPicture>
+              <img src={star} alt="star" />
+            </StyledPicture>
+            <h3>Atrakcyjna oferta</h3>
+            <p>
+              Dostęp do wszystkich podzespołów i peryferiów komputerowych czołowych marek, ponad 500
+              modeli laptopów to atut, którym mało która firma może się pochwalić. Wszystko to
+              znajdziesz w naszym salonie.
+            </p>
+          </Wrapper>
+        </ExperienceWrapper>
+      </StyledWrapper>
+    </ScrollableAnchor>
   );
 };
 
