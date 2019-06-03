@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80503cacfeba8d046a5e9a139fd0c61e",
+    "revision": "55386396f7cde0d056e855d6158823b8",
     "url": "/ComNet/index.html"
   },
   {
-    "revision": "5d50a83fa68d4f82828e",
+    "revision": "9032b49c8c5cd50b6347",
     "url": "/ComNet/static/css/2.79692622.chunk.css"
   },
   {
-    "revision": "2dad7412cea932f866d6",
-    "url": "/ComNet/static/css/main.61c4b11c.chunk.css"
+    "revision": "36c560a37fdbe7cb3035",
+    "url": "/ComNet/static/css/main.38130f92.chunk.css"
   },
   {
-    "revision": "5d50a83fa68d4f82828e",
-    "url": "/ComNet/static/js/2.752627a7.chunk.js"
+    "revision": "9032b49c8c5cd50b6347",
+    "url": "/ComNet/static/js/2.ccd6fc32.chunk.js"
   },
   {
-    "revision": "2dad7412cea932f866d6",
-    "url": "/ComNet/static/js/main.4645bf06.chunk.js"
+    "revision": "36c560a37fdbe7cb3035",
+    "url": "/ComNet/static/js/main.21977b83.chunk.js"
   },
   {
     "revision": "7d47ddd1c1f5aaf2fa8e",
@@ -56,10 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ComNet/static/media/8.629c2f79.png"
   },
   {
-    "revision": "4227516c4ecade7150fa83fb55c8ef9d",
-    "url": "/ComNet/static/media/Fala2.4227516c.png"
-  },
-  {
     "revision": "61b776ae14440435451bf3fac83e9453",
     "url": "/ComNet/static/media/Geo.61b776ae.png"
   },
@@ -86,5 +82,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fe931bc71fdd3a1b96b801c1084264a2",
     "url": "/ComNet/static/media/computer.fe931bc7.png"
+  },
+  {
+    "revision": "2c984801c42e500b04acd2a71766781a",
+    "url": "/ComNet/static/media/stopka.2c984801.png"
   }
 ]);
