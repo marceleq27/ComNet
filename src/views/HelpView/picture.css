@@ -1,11 +1,11 @@
 .des {
-  display: none;
+  display: none !important;
 }
 @media (min-width: 768px) {
   .des {
-    display: block;
+    display: block !important;
   }
   .mob {
-    display: none;
+    display: none !important;
   }
 }
