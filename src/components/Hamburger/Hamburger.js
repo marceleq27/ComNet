@@ -10,7 +10,7 @@ const StyledHamburger = styled.span`
     display: block;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
   }
 `;
