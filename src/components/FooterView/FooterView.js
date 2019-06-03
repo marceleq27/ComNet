@@ -42,7 +42,7 @@ const StyledTitle = styled(Title)`
     width: 15%;
   }
   @media (min-width: 1024px) {
-    font-size: 65px;
+    font-size: 85px;
   }
 `;
 

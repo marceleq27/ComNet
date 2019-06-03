@@ -106,10 +106,11 @@ const Wrapper = styled.div`
   }
   p {
     text-align: center;
-    padding: 15px;
+    padding: 15px 20px;
     color: white;
     font-weight: ${({ theme }) => theme.regular};
     font-size: 16px;
+    line-height: 150%;
   }
   @media (min-width: 1024px) {
     flex-basis: 30%;
@@ -119,13 +120,10 @@ const Wrapper = styled.div`
 const StyledPicture = styled.picture`
   img {
     display: block;
-    width: 30%;
-    margin: 10px auto 20px;
+    width: 20%;
+    margin: 10px auto;
     @media (min-width: 768px) {
       width: 15%;
-    }
-    @media (min-width: 1024px) {
-      width: 30%;
     }
   }
 `;

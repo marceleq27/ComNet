@@ -12,7 +12,7 @@ const StyledWrapper = styled.section`
   @media (min-width: 1024px) {
     flex-direction: row;
     align-items: center;
-    justify-content: space;
+    justify-content: space-around;
   }
 `;
 

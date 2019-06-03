@@ -9,10 +9,9 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 const StyledWrapper = styled.div`
   margin-top: 50px;
-
   @media (min-width: 1024px) {
     flex-basis: 50%;
-    padding-left: 100px;
+    margin-left: 15%;
     margin-top: 20px;
   }
 `;
@@ -29,7 +28,7 @@ const StyledPicture = styled.picture`
   flex-basis: 30%;
   img {
     display: block;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
   }
   @media (min-width: 1024px) {
