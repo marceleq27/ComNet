@@ -37,11 +37,21 @@ const Card = styled.div`
   h4 {
     text-align: left;
     padding: 10px 21% 10px 0;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
   p {
     text-align: left;
-    padding: 10px 20% 15px 0;
-    font-size: 12px;
+    padding: 10px 25% 15px 0;
+    font-size: 11px;
+    line-height: 140%;
+    @media (min-width: 360px) {
+      font-size: 12px;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 `;
 const Arrow = styled.div`
@@ -132,7 +142,7 @@ class FAQ extends Component {
           <StyledHidingTitle color="white">FAQ</StyledHidingTitle>
           <Title>Często zadawane pytania</Title>
           <Wrapper>
-            <Card style={{ height: isActive ? '320px' : '120px', transition: '.5s' }}>
+            <Card style={{ height: isActive ? '250px' : '120px', transition: '.5s' }}>
               <h4>Jaki jest koszt naprawy mojego komputera / laptopa?</h4>
               <p
                 style={{
@@ -140,15 +150,13 @@ class FAQ extends Component {
                   transition: '.5s',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-                tenetur adipisci ut necessitatibus aliquam?
+                Koszt naprawy zależy od usterki. Przynieś do nas swój sprzęt, a zdiagnozujemy i
+                wycenimy szkodę za darmo. Będziesz mógł zdecydować czy naprawiasz sprzęt u nas, czy
+                zabierasz go do domu.
               </p>
               <Arrow
                 style={{
-                  height: isActive ? '320px' : '120px',
+                  height: isActive ? '250px' : '120px',
                   transition: '.5s',
                   background: isActive ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)' : ' #ed1c94',
                 }}
@@ -156,7 +164,7 @@ class FAQ extends Component {
                 <StyledButton onClick={this.handleClick}>{isActive ? '-' : '+'}</StyledButton>
               </Arrow>
             </Card>
-            <Card style={{ height: isActive2 ? '320px' : '120px', transition: '.5s' }}>
+            <Card style={{ height: isActive2 ? '240px' : '120px', transition: '.5s' }}>
               <h4>Po jakim czasie można odebrać naprawiony sprzęt?</h4>
               <p
                 style={{
@@ -164,15 +172,13 @@ class FAQ extends Component {
                   transition: '.5s',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-                tenetur adipisci ut necessitatibus aliquam?
+                Naprawiony sprzęt udaje nam się naprawić w większości przypadków w ciągu jednego
+                dnia. Jeżeli wymaga to sprowadzenia części, np. klawiatura do laptopa, zajmuje nam
+                to góra 2 dni robocze.
               </p>
               <Arrow
                 style={{
-                  height: isActive2 ? '320px' : '120px',
+                  height: isActive2 ? '240px' : '120px',
                   transition: '.5s',
                   background: isActive2
                     ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)'
@@ -182,7 +188,7 @@ class FAQ extends Component {
                 <StyledButton onClick={this.handleClick2}>{isActive2 ? '-' : '+'}</StyledButton>
               </Arrow>
             </Card>
-            <Card style={{ height: isActive3 ? '320px' : '120px', transition: '.5s' }}>
+            <Card style={{ height: isActive3 ? '240px' : '120px', transition: '.5s' }}>
               <h4>Ile kosztuje zakup komputera/ laptopa w waszej firmie?</h4>
               <p
                 style={{
@@ -190,15 +196,13 @@ class FAQ extends Component {
                   transition: '.5s',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-                tenetur adipisci ut necessitatibus aliquam?
+                Koszt jest w pełni zależny od wymagań klienta. Doradzimy Ci którego laptopa kupić,
+                lub jakie podzespoły wybrać do swojego komputera, aby nie przepłacić za części i
+                zmieścić się w twoim budżecie.
               </p>
               <Arrow
                 style={{
-                  height: isActive3 ? '320px' : '120px',
+                  height: isActive3 ? '240px' : '120px',
                   transition: '.5s',
                   background: isActive3
                     ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)'
@@ -208,7 +212,7 @@ class FAQ extends Component {
                 <StyledButton onClick={this.handleClick3}>{isActive3 ? '-' : '+'}</StyledButton>
               </Arrow>
             </Card>
-            <Card style={{ height: isActive4 ? '320px' : '120px', transition: '.5s' }}>
+            <Card style={{ height: isActive4 ? '240px' : '120px', transition: '.5s' }}>
               <h4>Jaki jest czas oczekiwania na zamówiony sprzęt?</h4>
               <p
                 style={{
@@ -216,15 +220,13 @@ class FAQ extends Component {
                   transition: '.5s',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe minus nam
-                corrupti commodi at explicabo fugiat asperiores, ducimus quae et aliquam culpa. Odio
-                possimus earum, nobis blanditiis hic quisquam saepe corrupti illum voluptatibus
-                recusandae quidem culpa minima commodi labore explicabo dolor quas consequatur eius
-                tenetur adipisci ut necessitatibus aliquam?
+                Zamówiony sprzęt odbierasz do 2 dni roboczych, ale najczęściej już kolejnego dnia.
+                Wszystko jest w pełni skonfigurowane, abyś mógł natychmiast korzystać i cieszyć się
+                swoim nowym zakupem.
               </p>
               <Arrow
                 style={{
-                  height: isActive4 ? '320px' : '120px',
+                  height: isActive4 ? '240px' : '120px',
                   transition: '.5s',
                   background: isActive4
                     ? 'linear-gradient(150deg,#1488CC 50%,#2B32B2)'

@@ -1,11 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from 'components/Title/Title';
+import img from 'assets/stopka.png';
 
-const StyledWrapper = styled.footer`
+const Background = styled.footer`
+  background-color: ${({ theme }) => theme.white};
+  @media (min-width: 1024px) {
+    background-image: url(${img});
+    background-position: 20% center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: ${({ theme }) => theme.white};
+  }
+`;
+const StyledWrapper = styled.div`
   position: relative;
   padding: 10px 20px 20px;
-  background-color: ${({ theme }) => theme.white};
   z-index: 5;
 `;
 const Wrapper = styled.div`
@@ -48,7 +58,7 @@ const StyledTitle = styled(Title)`
 
 const StyledP = styled.p`
   position: relative;
-  padding: 30px 0 0;
+  padding: 30px 0 10px;
   font-size: 25px;
   font-weight: ${({ theme }) => theme.regular};
   background: linear-gradient(
@@ -84,45 +94,27 @@ const StyledCopy = styled.p`
 `;
 const Color = styled.div`
   width: 100%;
-  background-color: ${({ theme }) => theme.white};
-  position: relative;
-  z-index: 5;
 `;
-const StyledHidingTitle = styled.h2`
-  display: none;
-  @media (min-width: 1024px) {
-    display: block;
-    position: absolute;
-    font-size: 150px;
-    z-index: -5;
-    color: white;
-    overflow: hidden;
-    letter-spacing: 100px;
-    padding-left: 50px;
-    width: 60%;
-    top: 0;
-    left: 0;
-  }
-`;
+
 const FooterView = () => {
   return (
     <>
-      <StyledWrapper>
-        <StyledHidingTitle color="white">COM NET</StyledHidingTitle>
-        <Wrapper>
-          <StyledTitle>COM-NET</StyledTitle>
-
-          <StyledP>Dzierżoniów</StyledP>
-          <StyledParagraph>
-            58-200 ul. Wrocławska 29 <br />
-            info@com-net.com.pl <br />
-            +48 607 035 025
-          </StyledParagraph>
-        </Wrapper>
-      </StyledWrapper>
-      <Color>
-        <StyledCopy>&#169; Wszelkie prawa zastrzeżone</StyledCopy>
-      </Color>
+      <Background>
+        <StyledWrapper>
+          <Wrapper>
+            <StyledTitle>COM-NET</StyledTitle>
+            <StyledP>Dzierżoniów</StyledP>
+            <StyledParagraph>
+              58-200 ul. Wrocławska 29 <br />
+              info@com-net.com.pl <br />
+              +48 607 035 025
+            </StyledParagraph>
+          </Wrapper>
+        </StyledWrapper>
+        <Color>
+          <StyledCopy>&#169; Wszelkie prawa zastrzeżone</StyledCopy>
+        </Color>
+      </Background>
     </>
   );
 };

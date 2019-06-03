@@ -2,14 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'theme/GlobalStyle';
-import HeroView from 'components/HeroView/HeroView';
+import HeroView from 'views/HeroView/HeroView';
 import { theme } from 'theme/mainTheme';
-import OurHistoryView from 'components/OurHistoryView/OurHistoryView';
-import HelpView from 'components/HelpView/HelpView';
-import StatisticsFAQView from 'components/StatisticsFAQView/StatisticsFAQView';
-import ContactAboutView from 'components/ContactAboutView/ContactAboutView';
-import ExperienceView from 'components/ExperienceView/ExperienceView';
-import FooterView from 'components/FooterView/FooterView';
+import OurHistoryView from 'views/OurHistoryView/OurHistoryView';
+import HelpView from 'views/HelpView/HelpView';
+import StatisticsFAQView from 'views/StatisticsFAQView/StatisticsFAQView';
+import ContactAboutView from 'views/ContactAboutView/ContactAboutView';
+import ExperienceView from 'views/ExperienceView/ExperienceView';
+import FooterView from 'views/FooterView/FooterView';
 import Navigation from 'components/Navigation/Navigation';
 
 const Root = () => {

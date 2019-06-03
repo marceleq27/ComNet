@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import image from 'assets/Fala2.png';
-import ListItem from 'components/HelpView/ListItem';
+import ListItem from 'views/HelpView/ListItem';
 import data from 'utils/data';
+import img from 'assets/DoGradMob.png';
+import img1 from 'assets/DoGrad.png';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import 'views/HelpView/picture.css';
 
 const StyledWrapper = styled.section`
   position: relative;
@@ -30,9 +32,11 @@ const StyledWrapper = styled.section`
     color: ${({ theme }) => theme.white};
     font-size: 30px;
     position: relative;
+    padding: 50px 0 20px;
     @media (min-width: 768px) {
       margin: 20px 0;
       font-size: 35px;
+      padding-top: 20px;
     }
     @media (min-width: 1024px) {
       margin: 50px 0;
@@ -59,15 +63,16 @@ const StyledImg = styled.img`
   display: block;
   position: absolute;
   top: 0;
-  transform: translateY(-98%);
+  left: 0;
   margin: 0;
   padding: 0;
-  @media (min-width: 768px) {
+
+  /* @media (min-width: 768px) {
     width: 50%;
   }
   @media (min-width: 768px) {
     width: 30%;
-  }
+  } */
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -89,7 +94,10 @@ class HelpView extends Component {
       <>
         <ScrollableAnchor id="section1">
           <StyledWrapper>
-            <StyledImg src={image} alt="svg" />
+            <picture>
+              <StyledImg src={img} className="mob" alt="svg" />
+              <StyledImg src={img1} className="des" alt="svg" />
+            </picture>
             <h2>W CZYM MOŻEMY CI POMÓC?</h2>
             <Wrapper>
               {data.map(item => (

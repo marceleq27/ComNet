@@ -5,7 +5,7 @@ import ListItems from 'components/ListItems/ListItems';
 
 const StyledNav = styled.nav`
   z-index: 100;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;

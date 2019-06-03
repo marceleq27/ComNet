@@ -56,12 +56,16 @@ const Text = styled.div`
     flex-basis: 80%;
   }
 `;
-
+const StyledTitle = styled(Title)`
+  &::after {
+    width: 20%;
+  }
+`;
 const Contact = () => {
   return (
     <ScrollableAnchor id="contact">
       <StyledWrapper>
-        <Title>Kontakt</Title>
+        <StyledTitle>Kontakt</StyledTitle>
         <Wrapper>
           <StyledPicture>
             <img src={time} alt="time" />

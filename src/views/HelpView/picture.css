@@ -1,0 +1,11 @@
+.des {
+  display: none;
+}
+@media (min-width: 768px) {
+  .des {
+    display: block;
+  }
+  .mob {
+    display: none;
+  }
+}

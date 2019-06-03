@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import img from 'assets/Fala2.png';
+import img from 'assets/DoGradMob.png';
+import img1 from 'assets/DoGrad.png';
 import heart from 'assets/Ind.png';
 import people from 'assets/Kad.png';
 import star from 'assets/Star.png';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import 'views/HelpView/picture.css';
 
 const StyledWrapper = styled.section`
   position: relative;
@@ -29,9 +31,11 @@ const StyledWrapper = styled.section`
     color: ${({ theme }) => theme.white};
     font-size: 30px;
     position: relative;
+    padding: 50px 0 20px;
     @media (min-width: 768px) {
       margin: 20px 0;
       font-size: 35px;
+      padding-top: 20px;
     }
     @media (min-width: 1024px) {
       margin: 50px 0;
@@ -58,15 +62,9 @@ const StyledImg = styled.img`
   display: block;
   position: absolute;
   top: 0;
-  transform: translateY(-98%);
+  left: 0;
   margin: 0;
   padding: 0;
-  @media (min-width: 768px) {
-    width: 50%;
-  }
-  @media (min-width: 768px) {
-    width: 30%;
-  }
 `;
 const ExperienceWrapper = styled.div`
   display: flex;
@@ -131,7 +129,8 @@ const ExperienceView = () => {
   return (
     <ScrollableAnchor id="experience">
       <StyledWrapper>
-        <StyledImg src={img} alt="svg" />
+        <StyledImg src={img} className="mob" alt="svg" />
+        <StyledImg src={img1} className="des" alt="svg" />
         <h2>NASZE ATUTY</h2>
         <ExperienceWrapper>
           <Wrapper>

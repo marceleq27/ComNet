@@ -36,12 +36,16 @@ const Wrapper = styled.div`
     justify-content: space-around;
   }
 `;
-
+const StyledTitle = styled(Title)`
+  &::after {
+    width: 20%;
+  }
+`;
 const Statistics = () => {
   return (
     <ScrollableAnchor id="statistics">
       <StyledWrapper>
-        <Title>Statystyki</Title>
+        <StyledTitle>Statystyki</StyledTitle>
 
         <Wrapper>
           <h4>Serwis</h4>
