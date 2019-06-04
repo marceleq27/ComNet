@@ -98,7 +98,7 @@ class HelpView extends Component {
               <StyledImg src={img} className="mob" alt="svg" />
               <StyledImg src={img1} className="des" alt="svg" />
             </picture>
-            <h2>W CZYM MOŻEMY CI POMÓC?</h2>
+            <h2>NASZA OFERTA</h2>
             <Wrapper>
               {data.map(item => (
                 <ListItem key={item.id} text={item.text} img={item.img} />

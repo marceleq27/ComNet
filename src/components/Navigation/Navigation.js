@@ -5,7 +5,7 @@ import ListItems from 'components/ListItems/ListItems';
 
 const StyledNav = styled.nav`
   z-index: 100;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -23,11 +23,33 @@ const StyledNav = styled.nav`
 `;
 
 class Navigation extends Component {
-  state = {};
+  state = {
+    isViewed: true,
+  };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (window.scrollY === 0) {
+      this.setState({ isViewed: true });
+    } else if (window.scrollY !== 0) {
+      this.setState({ isViewed: false });
+    }
+  };
 
   render() {
+    const { isViewed } = this.state;
     return (
-      <StyledNav className="menu_activea">
+      <StyledNav
+        className="menu_activea"
+        style={{
+          display: isViewed ? 'block' : 'none',
+          opacity: isViewed ? '1' : '0',
+          transition: isViewed ? '0.4s' : '0.4s',
+        }}
+      >
         <Hamburger />
         <ListItems />
       </StyledNav>

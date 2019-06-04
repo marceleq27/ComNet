@@ -10,8 +10,8 @@ const StyledHamburger = styled.span`
     display: block;
     position: absolute;
     top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -70%);
   }
 `;
 class Hamburger extends Component {
@@ -31,11 +31,7 @@ class Hamburger extends Component {
   render() {
     const { isActiveNav } = this.state;
     return (
-      <button
-        onClick={this.handleChange}
-        className="hamburger hamburger--spin js-hamburger"
-        type="button"
-      >
+      <button onClick={this.handleChange} className="hamburger js-hamburger" type="button">
         <StyledHamburger className={isActiveNav ? 'is-active hamburger-box' : 'hamburger-box'}>
           <img src={hamburgerIcon} alt="hamburger" />
         </StyledHamburger>
