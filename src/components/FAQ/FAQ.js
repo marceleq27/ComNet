@@ -172,9 +172,9 @@ class FAQ extends Component {
                   transition: '.5s',
                 }}
               >
-                Naprawiony sprzęt udaje nam się naprawić w większości przypadków w ciągu jednego
-                dnia. Jeżeli wymaga to sprowadzenia części, np. klawiatura do laptopa, zajmuje nam
-                to góra 2 dni robocze.
+                Uszkodzony sprzęt udaje nam się naprawić w większości przypadków w ciągu jednego
+                dnia. Jeżeli wymaga to sprowadzenia części zamiennych, których aktualnie nie
+                posiadamy na magazynie to zazwyczaj zajmuje nam to góra 2-3 dni robocze.
               </p>
               <Arrow
                 style={{

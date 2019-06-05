@@ -140,8 +140,8 @@ const ExperienceView = () => {
             <h3>Indywidualne podjeście</h3>
             <p>
               W przeciwieństwie do wielu innych firm, stosujemy indywidualne podejście do każdego
-              klienta, i nigdy nie proponujemy zestawu standardowych decyzji dla Ciebie lub Twojej
-              firmy.
+              klienta, i nigdy nie proponujemy zestawu standardowych rozwiązań dla Ciebie lub Twojej
+              firmy. Twój komputer musi być w 100% dopasowany to Twoich wymagań.
             </p>
           </Wrapper>
           <Wrapper>
@@ -151,8 +151,8 @@ const ExperienceView = () => {
             <h3>Doświadczona kadra</h3>
             <p>
               Com-Net to oddana i wykwalifikowana kadra gotowa, żeby pomóc Tobie w potrzebie i
-              służyć fachowym doradztwem i pomocą. Ponad 20 lat doświadczenia czyni nas ekspertami w
-              swoim fachu.
+              służyć fachowym doradztwem i pomocą. Ponad 22 lata doświadczenia czyni nas ekspertami
+              w swoim fachu.
             </p>
           </Wrapper>
           <Wrapper>

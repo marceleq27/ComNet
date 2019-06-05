@@ -140,13 +140,13 @@ function przeglad() {
   `;
   return (
     <StyledRelative>
-      <b>Nasza firma działa na rynku już ponad 20 lat.</b> <br /> <br /> Każdy komputer zamówiony u
-      nas spełnia wymagania swojego przyszłego właściciela. Począwszy od ceny, a kończąc na
+      <b>Nasza firma działa na rynku już ponad 20 lat.</b> <br /> <br /> Każdy zamówiony u nas
+      komputer spełnia wymagania swojego przyszłego właściciela. Począwszy od ceny, a kończąc na
       podzespołach i peryferiach. Podczas rozmowy w naszym salonie otrzymujesz fachowe doradztwo,
-      żeby idealnie dobrać podzespoły do Twojej przyszłej maszyny. <br /> <br /> W ofercie mamy
-      podzespoły wszystkich liderów rynku komputerowego. Udzielamy nawet 10 letniej gwarancji na
-      sprzęt. <br /> <br /> Od podjęcia decyzji do odbioru swojej wymarzonej maszyny czekasz
-      zazwyczaj jeden dzień roboczy. Komputer odbierasz w pełni skonfigurowany. Montaż i
+      aby idealnie dobrać podzespoły do Twojej przyszłej maszyny. <br /> <br /> W ofercie mamy
+      podzespoły wszystkich liderów rynku komputerowego, a na zakupiony sprzęt udzielamy nawet 10
+      letniej gwarancji. <br /> <br /> Od złożenia zamówienia do odbioru swojej wymarzonej maszyny
+      czekasz zazwyczaj jeden dzień roboczy. Komputer odbierasz w pełni skonfigurowany. Montaż i
       konfiguracja podzespołów gratis.
       <a href="#contact">
         <SecondaryButton>Kontakt</SecondaryButton>
@@ -162,10 +162,10 @@ function informacje() {
     <StyledRelative>
       <b>Nasza siedziba znajduje się w Dzierżoniowie</b>
       <br /> <br />
-      Ponad 20 lat praktyki w składaniu komputerów jest umiejętnością, którą ceni każdy klient.
-      Nawet Ci najbardziej wymagający wychodzą od nas z uśmiechem na ustach zadowoleni z podjętych
-      decyzji i dokonanego zakupu.
-      <br /> <br /> Strony internetowe które piszemy stawiają na przejżystość, są responsywne
+      Ponad 22 lata praktyki w montażu i konfiguracji komputerów jest umiejętnością, którą ceni
+      każdy klient. Nawet Ci najbardziej wymagający wychodzą od nas z uśmiechem na ustach zadowoleni
+      z podjętych decyzji i dokonanego zakupu.
+      <br /> <br /> Strony internetowe które piszemy stawiają na przejrzystość, są responsywne
       (mobile-friendly) i znakomicie zaprojektowane.
       <br /> <br /> Jeżeli jesteś klientem stawiającym na jakość wykonania i nie masz ochoty na
       późniejsze serwisowanie źle złożonego komputera to trafiłeś w idealne miejsce. Zapraszamy do
@@ -190,7 +190,7 @@ function naszewartosci() {
       powierzysz przykładamy się w 100% i wkładamy w nie całe serce.
       <br /> <br /> Każde zlecenie które nam powierzysz to twoje zaufanie do nas. Staramy się
       najmocniej jak możemy, aby tego zaufania nie stracić. Każdy krok który musimy podjąć bez
-      Twojej obecności u nas jest wpierw konsultowany z Tobą.
+      Twojej obecności u nas, jest najpierw konsultowany z Tobą telefonicznie.
       <a href="#contact">
         <SecondaryButton>Kontakt</SecondaryButton>
       </a>
