@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "378593c347dca38b17eb8624bd484638",
+    "revision": "0ae427f86582f7049832a8c13fedf5f5",
     "url": "/ComNet/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ComNet/static/css/2.79692622.chunk.css"
   },
   {
-    "revision": "06789306fcc226fefdf6",
+    "revision": "6da42063b338bb8f0536",
     "url": "/ComNet/static/css/main.b603e722.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ComNet/static/js/2.04ec17e2.chunk.js"
   },
   {
-    "revision": "06789306fcc226fefdf6",
-    "url": "/ComNet/static/js/main.4ef994c0.chunk.js"
+    "revision": "6da42063b338bb8f0536",
+    "url": "/ComNet/static/js/main.36c5edd0.chunk.js"
   },
   {
     "revision": "7d47ddd1c1f5aaf2fa8e",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ComNet/static/media/Time.fd4e8338.png"
   },
   {
-    "revision": "fe931bc71fdd3a1b96b801c1084264a2",
-    "url": "/ComNet/static/media/computer.fe931bc7.png"
+    "revision": "c04cb09932252a50521fc1572bd6992a",
+    "url": "/ComNet/static/media/computer.c04cb099.png"
   },
   {
     "revision": "2c984801c42e500b04acd2a71766781a",
